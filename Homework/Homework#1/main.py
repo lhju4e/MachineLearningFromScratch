@@ -23,4 +23,7 @@ except:
 
 if __name__ == '__main__': # Start from main
     #Implement Load and Plot Code here
+    df = pd.read_csv("./data.csv")
+    df.plot(kind='scatter', x='Sepal length', y='Sepal width')
+    print("d")
     plt.show() # show plot
